@@ -1,0 +1,412 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>레버넌트 - 나무위키</title>
+<meta charset="utf-8">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta http-equiv="x-pjax-version" content="394cf05cda4c537cb74da821c58dc394">
+<meta name="generator" content="the seed">
+<meta name="application-name" content="나무위키">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="msapplication-tooltip" content="나무위키">
+<meta name="msapplication-starturl" content="/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8">
+<link rel="canonical" href="https://namu.wiki/w/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8">
+<link rel="search" type="application/opensearchdescription+xml" title="나무위키" href="/opensearch.xml">
+<meta name="theme-color" content="#008275"><meta name="viewport" content="user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, width=device-width">
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="icon" sizes="128x128" href="/img/icon.png">
+<link rel="apple-touch-icon" href="/img/apple_icon.png">
+<meta name="googlebot" content="noarchive">
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-83625086-2"></script>
+<script>
+window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments);}gtag('js', new Date());gtag('config', 'UA-83625086-2');
+</script>
+		<link rel="copyright" href="//creativecommons.org/licenses/by-nc-sa/2.0/kr/" />
+
+
+<link rel="stylesheet" href="css/diffview.css?05e3f5dd">
+<link rel="stylesheet" href="css/katex.min.css?7ee60c84">
+<link rel="stylesheet" href="css/wiki.css?39d536e6">
+<link rel="stylesheet" href="skins/senkawa/css/lib/jquery-ui.min.css?840cca94">
+<link rel="stylesheet" href="skins/senkawa/css/lib/bootstrap.min.css?f040bd43">
+<link rel="stylesheet" href="skins/senkawa/css/lib/ionicons.min.css?2d4234e8">
+<link rel="stylesheet" href="skins/senkawa/css/lib/nprogress.css?9dc52b7d">
+<link rel="stylesheet" href="skins/senkawa/css/bootstrap-fix.css?b43106c0">
+<link rel="stylesheet" href="skins/senkawa/css/layout.css?5fcbe609">
+<link rel="stylesheet" href="skins/senkawa/css/wiki.css?2c03de5d">
+<link rel="stylesheet" href="skins/senkawa/css/discuss.css?7fd2aa53">
+<link rel="stylesheet" href="skins/senkawa/css/dark.css?21f8f5c5">
+
+<!--[if (!IE)|(gt IE 8)]><!--><script type="text/javascript" src="/js/jquery-2.1.4.min.js?f9c7afd0"></script><!--<![endif]-->
+<!--[if lt IE 9]><script type="text/javascript" src="/js/jquery-1.11.3.min.js?895323ed"></script><![endif]-->
+<script type="text/javascript" src="js/dateformatter.js?508d6dd4"></script>
+<script type="text/javascript" src="js/intersection-observer.js?b462101e"></script>
+<script type="text/javascript" src="js/theseed.js?228f6297"></script>
+<script type="text/javascript" src="skins/senkawa/js/lib/jquery.pjax.js?700f7656"></script>
+<script type="text/javascript" src="skins/senkawa/js/lib/jquery.lazyload.min.js?5c01d7af"></script>
+<script type="text/javascript" src="skins/senkawa/js/lib/jquery-ui.min.js?557e2375"></script>
+<script type="text/javascript" src="skins/senkawa/js/lib/tether.min.js?e21e4520"></script>
+<script type="text/javascript" src="skins/senkawa/js/lib/bootstrap.min.js?a2f0eda8"></script>
+<script type="text/javascript" src="skins/senkawa/js/lib/nprogress.js?5fc208df"></script>
+<script type="text/javascript" src="skins/senkawa/js/namu.js?beddd0b2"></script>
+<script src="https://www.google.com/recaptcha/api.js?render=explicit&onload=recaptchaOnLoad" async defer></script>
+</head>
+<body class="senkawa">
+
+	<script type="text/javascript" src="/skins/senkawa/js/layout.js?4b7226db"></script>
+	<div class="navbar-wrapper">
+		<nav class="navbar navbar-dark bg-inverse navbar-static-top">
+			<a class="navbar-brand wiki-logo" href="/w/%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4:%EB%8C%80%EB%AC%B8"></a>
+			<ul class="nav navbar-nav">
+				<li class="nav-item">
+					<a class="nav-link" href="/RecentChanges" title="최근 변경">
+						<span class="icon ion-compass"></span>
+						<span class="icon-title">최근 변경</span>
+					</a>
+				</li>
+				<li class="nav-item">
+					<a class="nav-link" href="/RecentDiscuss" title="최근 토론">
+						<span class="icon ion-android-textsms"></span>
+						<span class="icon-title">최근 토론</span>
+					</a>
+				</li>
+				<li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" title="특수 기능" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+						<span class="icon ion-ios-gear"></span>
+						<span class="icon-title">특수 기능</span>
+
+						<span class="caret"></span>
+					</a>
+
+					<div class="dropdown-menu right">
+						<a class="dropdown-item" href="https://board.namu.wiki/" data-npjax="true">
+							<span class="icon ion-clipboard"></span>
+							<span class="icon-title">게시판</span>
+						</a>
+
+						<div class="dropdown-divider"></div>
+
+						<a class="dropdown-item" href="/NeededPages">
+							<span class="icon ion-coffee"></span>
+							<span class="icon-title">작성이 필요한 문서</span>
+						</a>
+						<a class="dropdown-item" href="/OrphanedPages">
+							<span class="icon ion-sad-outline"></span>
+							<span class="icon-title">고립된 문서</span>
+						</a>
+						<a class="dropdown-item" href="/UncategorizedPages">
+							<span class="icon ion-help-circled"></span>
+							<span class="icon-title">분류가 되지 않은 문서</span>
+						</a>
+						<a class="dropdown-item" href="/OldPages">
+							<span class="icon ion-pause"></span>
+							<span class="icon-title">편집된 지 오래된 문서</span>
+						</a>
+						<a class="dropdown-item" href="/ShortestPages">
+							<span class="icon ion-heart-broken"></span>
+							<span class="icon-title">내용이 짧은 문서</span>
+						</a>
+						<a class="dropdown-item" href="/LongestPages">
+							<span class="icon ion-star"></span>
+							<span class="icon-title">내용이 긴 문서</span>
+						</a>
+						<a class="dropdown-item" href="/BlockHistory">
+							<span class="icon ion-eye-disabled"></span>
+							<span class="icon-title">차단 내역</span>
+						</a>
+						<a class="dropdown-item" href="/RandomPage">
+							<span class="icon ion-shuffle"></span>
+							<span class="icon-title">RandomPage</span>
+						</a>
+						<a class="dropdown-item" href="/Upload">
+							<span class="icon ion-android-upload"></span>
+							<span class="icon-title">파일 올리기</span>
+						</a>
+						<a class="dropdown-item" href="/License">
+							<span class="icon ion-pricetag"></span>
+							<span class="icon-title">라이선스</span>
+						</a>
+
+
+
+
+
+
+
+
+					</div>
+				</li>
+
+				<li class="nav-item">
+					<a class="nav-link" href="//namu.live/" title="나무라이브">
+						<span class="icon ion-android-list"></span>
+						<span class="icon-title">라이브</span>
+					</a>
+				</li>
+			</ul>
+
+			<!-- middle -->
+
+			<ul class="nav navbar-nav pull-right">
+				<li class="nav-item dropdown user-menu-parent">
+					<a class="nav-link dropdown-toggle user-menu" href="#" title="Member Menu" data-toggle="dropdown" aria-haspopup="true">
+					
+						<span class="icon ion-person"></span>
+					
+					</a>
+
+					<div class="dropdown-menu user-dropdown right">
+					
+						<div class="dropdown-item user-info">
+							<div class="user-info">
+								<div>118.219.105.204</div>
+								<div>Please login!</div>
+							</div>
+						</div>
+					
+						<div class="dropdown-divider"></div>
+						<a id="settingsLink" class="dropdown-item" href="/settings" style="display: none;">스킨 설정</a>
+						<a id="darkToggleLink" class="dropdown-item" href="#">어두운 화면으로</a>
+						<div class="dropdown-divider"></div>
+					
+						<a class="dropdown-item" href="/contribution/ip/118.219.105.204/document">내 문서 기여 목록</a>
+						<a class="dropdown-item" href="/contribution/ip/118.219.105.204/discuss">내 토론 기여 목록</a>
+					
+						<div class="dropdown-divider"></div>
+					
+						<a class="dropdown-item" href="/member/login?redirect=%2Fw%2F%25EB%25A0%2588%25EB%25B2%2584%25EB%2584%258C%25ED%258A%25B8">로그인</a>
+					
+					</div>
+				</li>
+			</ul>
+
+			<form class="form-inline navbar-form search-box-parent">
+				<div class="input-group search-box">
+					<span class="input-group-btn left-search-btns">
+						<a class="btn btn-secondary" href="/random" role="button">
+							<span class="icon ion-shuffle"></span>
+						</a>
+					</span>
+					<input type="text" id="searchInput" class="form-control" placeholder="Search" tabindex="1">
+					<span class="input-group-btn right-search-btns">
+						<button id="searchBtn" class="btn btn-secondary" type="button">
+							<span class="icon ion-search"></span>
+						</button>
+						<button id="goBtn" class="btn btn-secondary" type="button">
+							<span class="icon ion-arrow-right-c"></span>
+						</button>
+					</span>
+				</div>
+			</form>
+		</nav>
+	</div>
+
+	<div class="content-wrapper">
+		<aside class="sidebar has-site-notice">
+			<div class="card recent-card">
+				<h5 class="card-title">최근 변경</h5>
+				<div class="link-table" id="recentChangeTable">
+					<a><span>00:00</span>갱신중...</a>
+				</div>
+				<a class="more-link" href="/RecentChanges">[더 보기]</a>
+			</div>
+
+			<div class="card live-list-card" data-slug="headline" data-count="5">
+				<h5 class="card-title">라이브 헤드라인 최신글</h5>
+				<div class="link-table">
+					<a><span>00:00</span>갱신중...</a>
+				</div>
+				<a class="more-link" href="//namu.live/b/headline">[더 보기]</a>
+			</div>
+
+			
+		</aside>
+
+		<div class="live-topbar-area">&nbsp;</div>
+		<article class="container-fluid wiki-article">
+
+			
+
+			
+			
+				
+				<div class="wiki-article-menu">
+					<div class="btn-group" role="group">
+						<a class="btn btn-secondary" href="/xref/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8" role="button">역링크</a>
+						<a class="btn btn-secondary" href="/discuss/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8" role="button">토론</a>
+						<a class="btn btn-secondary" rel="nofollow" href="/edit/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8" role="button">편집</a>
+						<a class="btn btn-secondary" href="/history/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8" role="button">역사</a>
+					
+						<a class="btn btn-secondary" href="/acl/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8" role="button">ACL</a>
+					</div>
+				</div>
+				
+			
+			
+				<h1 class="title">
+				
+					<a href="/w/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8"><span class="wiki-document-title">레버넌트</span></a>
+				
+				</h1>
+			
+			
+			
+	
+	<p class="wiki-edit-date">최근 수정 시각: <time datetime="2018-05-04T07:12:15.000Z" data-format="Y-m-d H:i:s">2018-05-04 07:12:15</time></p>
+	
+
+	
+
+	
+
+	
+		<div class="wiki-category">
+			<h2>분류</h2>
+			<ul>
+			
+				<li><a href='/w/%EB%B6%84%EB%A5%98:%EB%8F%99%EC%9D%8C%EC%9D%B4%EC%9D%98%EC%96%B4/%E3%84%B9'>동음이의어/ㄹ</a></li>
+			
+				<li><a href='/w/%EB%B6%84%EB%A5%98:%ED%8C%90%ED%83%80%EC%A7%80'>판타지</a></li>
+			
+			</ul>
+		</div>
+	
+	
+
+	<div class="wiki-content clearfix">
+		
+		
+		<div class="wiki-inner-content">
+			
+			<p><br></p><p><a class='wiki-link-internal' href='/w/%ED%8C%8C%EC%9D%BC:%EB%82%98%EB%AC%B4%EC%9C%84%ED%82%A4%2B%EC%9C%A0%EB%8F%84.png' title='파일:나무위키+유도.png'><span class='wiki-image-align-left' style='width:21px;'><span class='wiki-image-wrapper' style='width: 100%;'><img class='wiki-image-space' width='100%' src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIwIiBoZWlnaHQ9IjIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4='><img class='wiki-image wiki-image-loading' width='100%' src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjIwIiBoZWlnaHQ9IjIyMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=' data-filesize='36499' data-src='//cdn.namuwikiusercontent.com/s/e2d4341053370ae1322528d26f7be82fdd8e47a09eb6a6504ae3e5856c06f4406b9558cbb467b65af43c1d396ba8fb6966ea9aa16ab6df16207ed4e9c9b01c6609c6a8a428b099fd823ee565d875a012?e=1526518092&amp;k=tbg-I1UuZeTo1kgQEbkLEQ' alt='파일:나무위키+유도.png'><noscript><img class='wiki-image' width='100%' src='//cdn.namuwikiusercontent.com/s/e2d4341053370ae1322528d26f7be82fdd8e47a09eb6a6504ae3e5856c06f4406b9558cbb467b65af43c1d396ba8fb6966ea9aa16ab6df16207ed4e9c9b01c6609c6a8a428b099fd823ee565d875a012?e=1526518092&amp;k=tbg-I1UuZeTo1kgQEbkLEQ' alt='파일:나무위키+유도.png'></noscript></span></span></a>   다른 뜻에 대해서는 아래 문서를 참조하십시오.</p><ul class='wiki-list'><li><p><a class='wiki-link-internal' href='/w/%EC%95%8C%EB%A0%88%ED%95%9C%EB%93%9C%EB%A1%9C%20%EA%B3%A4%EC%82%B4%EB%A0%88%EC%8A%A4%20%EC%9D%B4%EB%83%90%EB%A6%AC%ED%88%AC' title='알레한드로 곤살레스 이냐리투'>알레한드로 곤살레스 이냐리투</a> 감독, <a class='wiki-link-internal' href='/w/%EB%A0%88%EC%98%A4%EB%82%98%EB%A5%B4%EB%8F%84%20%EB%94%94%EC%B9%B4%ED%94%84%EB%A6%AC%EC%98%A4' title='레오나르도 디카프리오'>레오나르도 디카프리오</a>, <a class='wiki-link-internal' href='/w/%ED%86%B0%20%ED%95%98%EB%94%94' title='톰 하디'>톰 하디</a> 출연의 영화 → <a class='wiki-link-internal' href='/w/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8:%20%EC%A3%BD%EC%9D%8C%EC%97%90%EC%84%9C%20%EB%8F%8C%EC%95%84%EC%98%A8%20%EC%9E%90' title='레버넌트: 죽음에서 돌아온 자'>레버넌트: 죽음에서 돌아온 자</a></p></li><li><p><a class='wiki-link-internal' href='/w/%EB%8D%98%EC%A0%84%20%EC%95%A4%20%ED%8C%8C%EC%9D%B4%ED%84%B0' title='던전 앤 파이터'>던전 앤 파이터</a>의 <a class='wiki-link-internal' href='/w/%EB%B1%85%EA%B0%80%EB%93%9C(%EB%8D%98%EC%A0%84%20%EC%95%A4%20%ED%8C%8C%EC%9D%B4%ED%84%B0)' title='뱅가드(던전 앤 파이터)'>뱅가드</a> 각성명 → <a class='wiki-link-internal' href='/w/%EB%B1%85%EA%B0%80%EB%93%9C(%EB%8D%98%EC%A0%84%20%EC%95%A4%20%ED%8C%8C%EC%9D%B4%ED%84%B0)' title='뱅가드(던전 앤 파이터)'>뱅가드(던전 앤 파이터)</a></p></li><li><p><a class='wiki-link-internal' href='/w/%EC%B9%B4%EC%9A%B4%ED%84%B0%20%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%81%AC%20%EC%98%A8%EB%9D%BC%EC%9D%B8' title='카운터 스트라이크 온라인'>카운터 스트라이크 온라인</a>의 좀비 시나리오 보스 → <a class='wiki-link-internal' href='/w/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8(%EC%B9%B4%EC%9A%B4%ED%84%B0%20%EC%8A%A4%ED%8A%B8%EB%9D%BC%EC%9D%B4%ED%81%AC%20%EC%98%A8%EB%9D%BC%EC%9D%B8)' title='레버넌트(카운터 스트라이크 온라인)'>레버넌트(카운터 스트라이크 온라인)</a></p></li><li><p>FPS 게임 <a class='wiki-link-internal' href='/w/%EB%91%A0%20%EC%8B%9C%EB%A6%AC%EC%A6%88' title='둠 시리즈'>둠 시리즈</a>의 <a class='wiki-link-internal' href='/w/%EC%8A%A4%EC%BC%88%EB%A0%88%ED%86%A4' title='스켈레톤'>스켈레톤</a>형 몬스터 → <a class='wiki-link-internal' href='/w/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8(%EB%91%A0)' title='레버넌트(둠)'>레버넌트(둠)</a></p></li></ul><p><br><span class='wiki-size size-up-1'><strong>Revenant</strong></span><br><br><div class='wiki-macro-toc' id='toc'><div class='toc-indent'><span class='toc-item'><a href='#s-1'>1</a>. 유럽 전설의 괴물</span><div class='toc-indent'><span class='toc-item'><a href='#s-1.1'>1.1</a>. 개요</span><span class='toc-item'><a href='#s-1.2'>1.2</a>. 특징 </span><span class='toc-item'><a href='#s-1.3'>1.3</a>. 레버넌트를 모티브로 만든 캐릭터</span></div><span class='toc-item'><a href='#s-2'>2</a>. PC 패키지 게임</span></div></div><br></p><h2 class='wiki-heading'><a id='s-1' href='#toc'>1.</a> 유럽 전설의 괴물<span class='wiki-edit-section'><a href='/edit/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8?section=1' rel='nofollow'>&#91;편집&#93;</a></span></h2><div class='wiki-heading-content'><p><a class='wiki-link-internal' href='/w/%ED%8C%8C%EC%9D%BC:templar-248x300.jpg' title='파일:templar-248x300.jpg'><span class='wiki-image-align-normal'><span class='wiki-image-wrapper'><img class='wiki-image-space' src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQ4IiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4='><img class='wiki-image wiki-image-loading' src='data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjQ4IiBoZWlnaHQ9IjMwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48L3N2Zz4=' data-filesize='43909' data-src='//cdn.namuwikiusercontent.com/s/42abb60b7114156ca157042573306c968ed42e31c9f08a7e45cdde1923cad4256d3b37acc6897ca0518142728fc2117b800d9faf745362967ebff0346506e75413591e8e7e381ca4776763426affca8d?e=1526783673&amp;k=ciULHr2xEGgeRTGCWXWGpw' alt='파일:templar-248x300.jpg'><noscript><img class='wiki-image' src='//cdn.namuwikiusercontent.com/s/42abb60b7114156ca157042573306c968ed42e31c9f08a7e45cdde1923cad4256d3b37acc6897ca0518142728fc2117b800d9faf745362967ebff0346506e75413591e8e7e381ca4776763426affca8d?e=1526783673&amp;k=ciULHr2xEGgeRTGCWXWGpw' alt='파일:templar-248x300.jpg'></noscript></span></span></a><br></p></div><h3 class='wiki-heading'><a id='s-1.1' href='#toc'>1.1.</a> 개요<span class='wiki-edit-section'><a href='/edit/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8?section=2' rel='nofollow'>&#91;편집&#93;</a></span></h3><div class='wiki-heading-content'><p>원래 의미는 유형(流刑)이나 긴 여행 등에서 돌아온 사람을 뜻하는 <a class='wiki-link-internal' href='/w/%EB%AA%85%EC%82%AC(%ED%92%88%EC%82%AC)' title='명사(품사)'>명사</a> 혹은 저승에서 돌아온 사람, 망령, 유령 등을 뜻 함. 두번째의 뜻인 망령, 유령에 기인한 괴물.<br></p></div><h3 class='wiki-heading'><a id='s-1.2' href='#toc'>1.2.</a> 특징 <span class='wiki-edit-section'><a href='/edit/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8?section=3' rel='nofollow'>&#91;편집&#93;</a></span></h3><div class='wiki-heading-content'><p>완전히 해골인  <a class='wiki-link-internal' href='/w/%EC%8A%A4%EC%BC%88%EB%A0%88%ED%86%A4' title='스켈레톤'>스켈레톤</a>들과는 다르게 말라붙은 시체 즉 <a class='wiki-link-internal' href='/w/%EB%AF%B8%EB%9D%BC' title='미라'>미라</a>이다. 즉 육신이 아직 남아있기에 피도 흘린다.  특징으로는 <a class='wiki-link-internal' href='/w/%EB%AC%B4%ED%86%B5' title='무통'>고통을 느끼지 못함</a>, 인간보다 월등히 빠른 민첩성, 복수할 대상 앞에서 <a class='wiki-link-internal' href='/w/%EC%95%88%EA%B4%91' title='안광'>눈에 빛이 나옴</a> 그리고 결정적으로 다른 해골들과 다른점은 <strong>죽기전의 일을 기억하여 자신을 살해한자를 복수하려고 한다</strong>는 점이다. 그리고 그들의 복수는 거의 대부분 성공한다고한다. 요약하면 죽은이가 원한을 가지고 부활해서 원한을 갚는다는 미라 괴물. 가끔 <a class='wiki-link-internal' href='/w/%ED%9D%A1%ED%98%88%EA%B7%80' title='흡혈귀'>흡혈귀</a> 처럼 흡혈을 한다는 이야기가 있다. 중세 영국에서 한 수도승이 되살아난 레버넌트의 입가에 피가 흐르고 있었다고 묘사한다. 영국 뿐만 아니라 서유럽에서도 비슷한 이야기가 전래되었다.<br></p></div><h3 class='wiki-heading'><a id='s-1.3' href='#toc'>1.3.</a> 레버넌트를 모티브로 만든 캐릭터<span class='wiki-edit-section'><a href='/edit/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8?section=4' rel='nofollow'>&#91;편집&#93;</a></span></h3><div class='wiki-heading-content'><ul class='wiki-list'><li><p><a class='wiki-link-internal' href='/w/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8(%EB%91%A0)' title='레버넌트(둠)'>레버넌트(둠)</a> - PC게임 <a class='wiki-link-internal' href='/w/%EB%91%A0%20%EC%8B%9C%EB%A6%AC%EC%A6%88' title='둠 시리즈'>둠 시리즈</a>에 등장하는 몬스터 중 하나</p></li><li><p><a class='wiki-link-internal not-exist' href='/w/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8%20%ED%83%80%EC%9D%B4%ED%83%84' title='레버넌트 타이탄'>레버넌트 타이탄</a> - <a class='wiki-link-internal' href='/w/Warhammer%2040%2C000' title='Warhammer 40,000'>Warhammer 40,000</a>에 등장하는 <a class='wiki-link-internal' href='/w/%EC%97%98%EB%8B%A4' title='엘다'>엘다</a>의 <a class='wiki-link-internal not-exist' href='/w/%ED%83%80%EC%9D%B4%ED%83%84(Warhammer%2040%2C000)' title='타이탄(Warhammer 40,000)'>타이탄</a> </p></li><li><p><a class='wiki-link-internal' href='/w/%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8' title='워크래프트'>워크래프트</a>의 몬스터<br><a class='wiki-link-internal' href='/w/%EA%B3%A0%EB%8C%80%20%EC%8B%A0' title='고대 신'>고대 신</a> 수하의 <a class='wiki-link-internal' href='/w/%EC%A0%95%EB%A0%B9(%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)' title='정령(워크래프트)'>정령</a> 병사들이다. 고대 신들이 <a class='wiki-link-internal' href='/w/%ED%8B%B0%ED%83%84(%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)' title='티탄(워크래프트)'>티탄</a>에게 패해 봉인당할 때 함께 <a class='wiki-link-internal' href='/w/%EC%A0%95%EB%A0%B9%EA%B3%84' title='정령계'>정령계</a>로 추방되었다고 한다. 정령계 밖의 세상에 존재하는 녀석들은 몇몇 무모한 <a class='wiki-link-internal' href='/w/%EC%86%8C%ED%99%98%EC%82%AC' title='소환사'>소환사</a>들이 다시 불러낸 것. <a class='wiki-link-external' href='http://wowwiki.wikia.com/wiki/Revenant' target='_blank' rel='noopener' title='http://wowwiki.wikia.com/wiki/Revenant'>참고</a></p><ul class='wiki-list'><li><p><a class='wiki-link-internal' href='/w/%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8%203' title='워크래프트 3'>워크래프트 3</a>의 <a class='wiki-link-internal' href='/w/%EC%96%B8%EB%8D%B0%EB%93%9C(%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)' title='언데드(워크래프트)'>언데드</a> <a class='wiki-link-internal' href='/w/%ED%81%AC%EB%A6%BD' title='크립'>크립</a><br>언데드 속성의 크립으로 등장한다. 다만 워크래프트3 메뉴얼의 설명에 따르면 언데드가 아닌 <a class='wiki-link-internal' href='/w/%EC%A0%95%EB%A0%B9(%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8)' title='정령(워크래프트)'>정령</a>의 일종이라고 나온다. 오리지날에서 나온 판금 방패의 레버넌트와 확장팩에서 새로 나온 바닷가/바다/심해 레버넌트가 있다. <a class='wiki-link-internal' href='/w/%EC%95%84%EC%9D%B4%EC%8A%A4' title='아이스'>아이스</a> 레버넌트는 아이스 샤드라는 아이템으로 소환도 가능하다. 오리지널 휴먼 캠페인에서 <a class='wiki-link-internal' href='/w/%EC%84%9C%EB%A6%AC%ED%95%9C' title='서리한'>서리한</a>을 지키고 있는 모습으로도 등장한다.<br><a class='wiki-link-internal' href='/w/%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8%203/%EC%BA%A0%ED%8E%98%EC%9D%B8/%EB%B3%B4%EB%84%88%EC%8A%A4' title='워크래프트 3/캠페인/보너스'>오크 보너스 캠페인</a>에서도 몇몇이 일종의 필드/인던(?) 보스몹으로 등장하는데 개중엔 진짜 레버넌트(버닝 소울 레버넌트 등)도 있지만, 모델링만 레버넌트고 설정상으로는 생전에 <a class='wiki-link-internal' href='/w/%ED%8C%94%EB%9D%BC%EB%94%98(%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8%203)' title='팔라딘(워크래프트 3)'>팔라딘</a>이었던 자들이 언데드화 된 데스로드들도 있다. 어느 쪽이나 <a class='wiki-link-internal' href='/w/%EB%A0%89%EC%82%AC%EB%A5%B4' title='렉사르'>렉사르</a>에게 좋은 아이템 공급원.</p></li><li><p><a class='wiki-link-internal' href='/w/%EC%9B%94%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%EC%9B%8C%ED%81%AC%EB%9E%98%ED%94%84%ED%8A%B8' title='월드 오브 워크래프트'>월드 오브 워크래프트</a>에 나오는 정령<br>WOW로 넘어오면서 <strong>망령</strong>으로 번역되었다. 첫 등장은 <a class='wiki-link-internal' href='/w/%EB%A6%AC%EC%B9%98%20%EC%99%95%EC%9D%98%20%EB%B6%84%EB%85%B8' title='리치 왕의 분노'>리치 왕의 분노</a>. 이후 정령의 한 종류로 계속 등장하고 있다. 불, 물, 땅, 바람의 원소마다 외형이 다르게 생겼다. 죽음 망령(Death Revenant)이 땅속성을 가지고 있지만, 게임에 등장하는 죽음 망령은 바람 망령과 같은 외형을 공유한다.</p></li></ul></li><li><p><a class='wiki-link-internal' href='/w/%EC%96%B8%EB%8D%94%ED%85%8C%EC%9D%BC' title='언더테일'>언더테일</a>의 <a class='wiki-link-internal' href='/w/%EC%83%8C%EC%A6%88' title='샌즈'>샌즈</a><br>샌즈가 스켈레톤인 것과는 별개로, 샌즈가 작중에서 보여주는 모습은 레버넌트의 특성에 들어맞는다. 적어도 레버넌트에서 영감은 받았을 가능성이 높다.</p></li><li><p><a class='wiki-link-internal' href='/w/%EC%9B%94%EB%93%9C%20%EC%98%A4%EB%B8%8C%20%EB%8B%A4%ED%81%AC%EB%8B%88%EC%8A%A4' title='월드 오브 다크니스'>월드 오브 다크니스</a>에서의 레버넌트<br>인간이 뱀파이어의 피를 마셔서 변하게되는 구울의 일종. 자세한 것은 <a class='wiki-link-internal' href='/w/%EA%B5%AC%EC%9A%B8(WOD)' title='구울(WOD)'>구울(WOD)</a>로.</p></li><li><p><a class='wiki-link-internal' href='/w/%ED%8A%B8%EB%A1%9C%EB%B8%8C' title='트로브'>트로브</a>의 <a class='wiki-link-internal' href='/w/Revenant(%ED%8A%B8%EB%A1%9C%EB%B8%8C)' title='Revenant(트로브)'>Revenant(트로브)</a><br>이쪽은 이름부터가 레버넌트다..</p></li></ul><p></p></div><h2 class='wiki-heading'><a id='s-2' href='#toc'>2.</a> PC 패키지 게임<span class='wiki-edit-section'><a href='/edit/%EB%A0%88%EB%B2%84%EB%84%8C%ED%8A%B8?section=5' rel='nofollow'>&#91;편집&#93;</a></span></h2><div class='wiki-heading-content'><p>시네마틱스에서 내놓고 해외에서는 에이도스가, 대한민국에서는 판타그램이 유통했던 PC 패키지 플랫폼의 액션 RPG.<br><br>황폐한 고대의 세계 유알에서 아쿨리온 섬의 지도자인 텐더릭이 딸 안드리아를 구하기 위해 유알의 옛 군주 로크를 깨우고, 주인공은 언데드 전사 로크가 되어 안드리아 공주를 떠나게 되는 여정을 그린 3인칭 시점의 실시간 액션 RPG. 싱글 플레이에서는 로크만을 조종할 수 있으나, 멀티 플레이 시에는 베이니, 나바로, 모가나도 선택할 수 있었다.<br><br>당시 디아블로 2 소식을 전후해 광고된 다른 RPG들처럼 디아블로 킬러를 자처하며 대대적으로 광고했던 게임 타이틀 중 하나였으며, 30가지의 기본 마법을 조합하여 더욱 강한 마법을 사용하는 시스템이나, 액션을 세분화하여 특성을 강화한 전투 방식 등이 꽤 참신하게 받아들여졌지만 시대를 앞서간 엔진 성능을 제대로 살리지 못했고 게임 플레이 타임도 짧아 비슷한 유형의 다른 게임들과 마찬가지로 시장에서 그다지 성공을 거두지는 못했다.<br><br>어느 웹하드 사이트에 윈도우7에서 구동 가능하도록 개조된 무설치 한글판 소프트가 올려져 있으므로 이 게임을 다시 하기 위해 굳이 윈도우98 PC를 구할 필요가 없게 되었다. <a class='wiki-link-external' href='http://andrasblake.com/files/guides/Revenant.pdf' target='_blank' rel='noopener' title='http://andrasblake.com/files/guides/Revenant.pdf'>공략집</a><br><br><br><br></p></div>
+			
+		</div>
+
+
+		
+
+
+	</div>
+	
+	<footer>
+		<p>
+			<img src="/skins/senkawa/img/license/ca9238c7df97342cfcca7252507d24153031d8a3334e150154bb072d2e87d7a6.png?d6c34310" style="display:none;">
+			<img alt="크리에이티브 커먼즈 라이선스" style="border-width: 0;" src="/skins/senkawa/img/cc-by-nc-sa-2.0-88x31.png?65c20b73">
+		</p>
+		<p>
+			이 저작물은 <a rel="license" href="//creativecommons.org/licenses/by-nc-sa/2.0/kr/">CC BY-NC-SA 2.0 KR</a>에 따라 이용할 수 있습니다. (단, 라이선스가 명시된 일부 문서 및 삽화 제외)<br />
+			기여하신 문서의 저작권은 각 기여자에게 있으며, 각 기여자는 기여하신 부분의 저작권을 갖습니다.
+		</p>
+		<p>
+			나무위키는 백과사전이 아니며 검증되지 않았거나, 편향적이거나, 잘못된 서술이 있을 수 있습니다.<br />나무위키는 위키위키입니다. 여러분이 직접 문서를 고칠 수 있으며, 다른 사람의 의견을 원할 경우 직접 토론을 발제할 수 있습니다.
+		</p>
+	</footer>
+
+
+		</article>
+	</div>
+
+	<div class="footer-wrapper">
+		<footer class="footer">
+			<p>namu.wiki<span class="sep"></span><a href="mailto:support@namu.wiki">Contáctenos</a><span class="sep"></span><a href="/Policy">Términos de uso</a><span class="sep"></span>Operado por umanle S.R.L.<span class="sep"></span>Hecho con &lt;3 en Asunción, República del Paraguay</p>
+			<p>Su zona horaria es <span id="timezone"></span><span class="sep"></span>Impulsado por <i>the seed engine</i></p>
+		</footer>
+	</div>
+
+	<ul class="nav-control">
+		<li>
+			<a href="#top" id="goTopBtn">
+				<span class="ion-arrow-up-b"></span>
+			</a>
+		</li>
+		<li>
+			<a href="#bottom" id="goBottomBtn">
+				<span class="ion-arrow-down-b"></span>
+			</a>
+		</li>
+	</ul>
+
+	<div class="modal fade" id="shortcutHelpModal">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+					</button>
+					<h5 class="modal-title">단축키 도움말</h5>
+				</div>
+				<div class="modal-body">
+					<dl class="dl-horizontal">
+						<dt class="col-sm-3"><b>F</b>ront Gate</dt>
+						<dd class="col-sm-9">대문</dd>
+
+						<dt class="col-sm-3">Recent<b>C</b>hanges</dt>
+						<dd class="col-sm-9">최근 변경</dd>
+
+						<dt class="col-sm-3">Recent<b>D</b>iscuss</dt>
+						<dd class="col-sm-9">최근 토론</dd>
+
+						<dt class="col-sm-3">R<b>A</b>ndom</dt>
+						<dd class="col-sm-9">랜덤 문서</dd>
+
+						<dt class="col-sm-3"><b>Shift</b> + <b>S</b>earch</dt>
+						<dd class="col-sm-9">검색</dd>
+
+						<dt class="col-sm-3"><b>E</b>dit</dt>
+						<dd class="col-sm-9">문서 편집</dd>
+
+						<dt class="col-sm-3"><b>?</b></dt>
+						<dd class="col-sm-9">단축키 도움말</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="searchModal" data-backdrop="false">
+		<div class="modal-dialog modal-sm">
+			<div class="modal-content">
+				<div class="modal-header">
+					<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+					<span aria-hidden="true">&times;</span>
+					<span class="sr-only">Close</span>
+					</button>
+					<h6 class="modal-title">검색</h6>
+				</div>
+				<div class="modal-body">
+					<div class="input-group search-box">
+						<input type="text" id="searchInput" class="form-control" placeholder="Search" tabindex="1">
+						<span class="input-group-btn">
+							<button id="searchBtn" class="btn btn-secondary" type="button" style="margin-left: 0;">
+								<span class="icon ion-search"></span>
+							</button>
+							<button id="goBtn" class="btn btn-secondary" type="button">
+								<span class="icon ion-arrow-right-c"></span>
+							</button>
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal" id="footnoteModal">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title">각주:</h5>
+				</div>
+				<div class="modal-body"></div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-block" data-dismiss="modal">닫기</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+</body>
+</html>
+
