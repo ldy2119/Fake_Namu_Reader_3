@@ -7,6 +7,9 @@ import android.view.View;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import org.jsoup.Jsoup;
+import org.jsoup.nodes.Document;
+
 import android.widget.Button;
 import android.widget.TextView;
 
@@ -18,24 +21,16 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        AssetManager am = getResources().getAssets();
 
         WebView webview = (WebView) findViewById(R.id.webView2);
         webview.setWebViewClient(new WebViewClient());
         WebSettings webSettings = webview.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
-        webview.loadUrl("file:///android_asset/umaN/test.html");
+        buildpage buildpage = new buildpage();
 
-        /*
-        try
-        {
+        buildpage.build("");
 
-        }
-        catch(Exception e)
-        {
-            e.printStackTrace();
-        }
-        */
+
     }
 }
