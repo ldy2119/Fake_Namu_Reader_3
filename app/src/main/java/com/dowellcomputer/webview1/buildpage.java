@@ -1,5 +1,9 @@
 package com.dowellcomputer.webview1;
 
+import android.content.Context;
+import android.content.res.AssetManager;
+import android.os.Environment;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 
@@ -9,12 +13,14 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.OutputStreamWriter;
 
+
 public class buildpage {
 
     public void build(String url)
     {
         try {
-            Document head = Jsoup.parse(new File("file:///android_asset/umaN/head.html"), "UTF-8");
+
+            Document head = Jsoup.parse(new File("file:///android_assets/umaN/head.html"), "UTF-8");
             Document body = Jsoup.connect(url).get();
             String a = head.html();
             a += body.body();
@@ -26,9 +32,10 @@ public class buildpage {
                 index = index+1;
             }
             a = a.replaceAll("/w/", "");
-            File f = new File("file:///umaN");
+            File f = new File(Environment.getDataDirectory()+"/nmaN");
             f.mkdirs();
             f = new File(f.getAbsoluteFile(), "output.html");
+
             BufferedWriter bf = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(f), "UTF-8"));
             bf.write(a);
             bf.close();
