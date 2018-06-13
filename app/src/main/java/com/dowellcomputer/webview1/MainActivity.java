@@ -20,6 +20,7 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 
 
@@ -35,7 +36,83 @@ public class MainActivity extends AppCompatActivity {
         WebSettings webSettings = webview.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
+        buildpagefirst();
         build("");
+    }
+
+    public void buildpagefirst()
+    {
+        try
+        {
+            if(getFilesDir().getAbsoluteFile().exists())
+            {
+                return;
+            }
+            AssetManager am = getAssets();
+            String[] assets = am.list("/");
+            for(String element : assets)
+            {
+                copyall(element);
+            }
+
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    void copyall(String path)
+    {
+        try
+        {
+            AssetManager am = getAssets();
+            String[] assets = am.list(path);
+            if(assets.length == 0)
+                copyfile(path);
+            else
+            {
+                String newpath = getFilesDir().getAbsolutePath() + File.separator + path;
+
+                File dir = new File(newpath);
+                if(!dir.exists())
+                    dir.mkdirs();
+                for(String element : assets)
+                    copyall(path + File.separator + element);
+
+            }
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
+    }
+
+    void copyfile(String path)
+    {
+        try
+        {
+            AssetManager am = getAssets();
+
+            String newpath = getFilesDir().getAbsolutePath() + File.separator + path;
+
+            InputStream is = am.open(path);
+            OutputStream out = new FileOutputStream(newpath);
+
+            byte[] buffer =     new byte[1024];
+            int read;
+            while((read = is.read()) != -1)
+            {
+                out.write(buffer, 0, read);
+            }
+            is.close();
+            out.flush();
+            out.close();
+        }
+        catch (Exception e)
+        {
+            e.printStackTrace();
+        }
     }
 
     public void build(String url)
@@ -47,6 +124,7 @@ public class MainActivity extends AppCompatActivity {
             InputStream in = am.open("umaN/head.html");
             InputStreamReader ir = new InputStreamReader(in);
             BufferedReader br = new BufferedReader(ir);
+            TextView text1 = (TextView) findViewById(R.id.text1);
             //Document head = Jsoup.parse(in, "UTF-8", "");
             //Document body = Jsoup.connect(url).get();
             //String a = head.html();
@@ -54,30 +132,11 @@ public class MainActivity extends AppCompatActivity {
             //a += body.body();
             a += "</html>";
             int index = 0;
-            while((index = a.indexOf("/w/", index)) != -1)
-            {
-                System.out.println(index);
-                index = index+1;
-            }
-            a = a.replaceAll("/w/", "");
 
-            String sdcard = Environment.getExternalStorageState();
             File file = null;
 
-            if ( !sdcard.equals(Environment.MEDIA_MOUNTED))
-            {
-                // SD카드가 마운트되어있지 않음
-                file = Environment.getRootDirectory();
-            }
-            else
-            {
-                // SD카드가 마운트되어있음
-                file = Environment.getExternalStorageDirectory();
-            }
 
-
-            String dir = file.getAbsolutePath() + "/mytestdata/";
-           // String path = file.getAbsolutePath() + String.format("/mytestdata/file_%02d/myfile%04d.mp4", fileType, fileId);
+            String dir = file.getAbsolutePath() + "/umaN/";
 
             file = new File(dir);
             if ( !file.exists() )
@@ -92,6 +151,7 @@ public class MainActivity extends AppCompatActivity {
             bf.write(a);
             bf.close();
             */
+            br.close();
             in.close();
 
         } catch (IOException e) {
