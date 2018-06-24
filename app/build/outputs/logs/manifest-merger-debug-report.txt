@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
+ADDED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
 MERGED from [com.android.support:appcompat-v7:26.1.0] C:\Users\Quote\.gradle\caches\transforms-1\files-1.1\appcompat-v7-26.1.0.aar\3658d452e4c13c722eea9fe8e111875f\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support.constraint:constraint-layout:1.1.0] C:\Users\Quote\.gradle\caches\transforms-1\files-1.1\constraint-layout-1.1.0.aar\f38827e66a677bb2a63f364f57a8cec0\AndroidManifest.xml:2:1-11:12
 MERGED from [com.android.support:animated-vector-drawable:26.1.0] C:\Users\Quote\.gradle\caches\transforms-1\files-1.1\animated-vector-drawable-26.1.0.aar\72884bc729c7b225a563beb44ef41264\AndroidManifest.xml:17:1-28:12
@@ -15,20 +15,20 @@ MERGED from [com.android.support:support-core-utils:26.1.0] C:\Users\Quote\.grad
 MERGED from [com.android.support:support-core-ui:26.1.0] C:\Users\Quote\.gradle\caches\transforms-1\files-1.1\support-core-ui-26.1.0.aar\ee9f8ada17e5ff636cf1924438a3b559\AndroidManifest.xml:17:1-31:12
 MERGED from [com.android.support:support-compat:26.1.0] C:\Users\Quote\.gradle\caches\transforms-1\files-1.1\support-compat-26.1.0.aar\f669823404ec84e5ff573fc3c6fb495e\AndroidManifest.xml:17:1-31:12
 MERGED from [android.arch.lifecycle:runtime:1.0.0] C:\Users\Quote\.gradle\caches\transforms-1\files-1.1\runtime-1.0.0.aar\59615a65cb804c0c06349fb71d4e4f45\AndroidManifest.xml:17:1-30:12
-INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
-INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
+INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
+INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
 	package
 		ADDED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:3:5-42
 		INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml
 		INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml
 	android:versionName
 		INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml
 	android:versionCode
 		INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-24:12
+		ADDED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:1-23:12
 		INJECTED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml
 	xmlns:android
 		ADDED from C:\Users\Quote\AndroidStudioProjects\webview1\app\src\main\AndroidManifest.xml:2:11-69

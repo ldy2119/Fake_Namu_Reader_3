@@ -7,6 +7,7 @@ import android.os.Bundle;
 import android.webkit.WebSettings;
 import android.webkit.WebView;
 import android.webkit.WebViewClient;
+import android.widget.Button;
 import android.widget.TextView;
 
 import org.jsoup.Jsoup;
@@ -31,25 +32,30 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        Button bt1 = (Button) findViewById(R.id.bt1);
+
         WebView webview = (WebView) findViewById(R.id.webView2);
         webview.setWebViewClient(new WebViewClient());
         WebSettings webSettings = webview.getSettings();
         webSettings.setJavaScriptEnabled(true);
 
         buildpagefirst();
-        build("");
+        //build("");
     }
 
     public void buildpagefirst()
     {
         try
         {
-            if(getFilesDir().getAbsoluteFile().exists())
+            if(new File(getFilesDir().getAbsolutePath() + File.separator + "umaN").exists())
             {
+                //TextView text = (TextView)findViewById(R.id.text1);
+                //text.setText("not Empty");
                 return;
             }
             AssetManager am = getAssets();
-            String[] assets = am.list("/");
+            String[] assets = am.list("");
+
             for(String element : assets)
             {
                 copyall(element);
@@ -69,12 +75,15 @@ public class MainActivity extends AppCompatActivity {
             AssetManager am = getAssets();
             String[] assets = am.list(path);
             if(assets.length == 0)
+            {
                 copyfile(path);
+            }
+
             else
             {
                 String newpath = getFilesDir().getAbsolutePath() + File.separator + path;
-
                 File dir = new File(newpath);
+
                 if(!dir.exists())
                     dir.mkdirs();
                 for(String element : assets)
